@@ -1,0 +1,27 @@
+{
+  "name": "music-note",
+  "version": "0.1.0",
+  "description": "Simple and fast musical note implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/musicnote.git"
+  },
+  "keywords": [
+    "music",
+    "solfege",
+    "note"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/musicnote/issues"
+  },
+  "homepage": "https://github.com/danigb/musicnote#readme",
+  "devDependencies": {
+    "vows": "^0.8.1"
+  }
+}
