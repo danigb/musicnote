@@ -41,9 +41,15 @@ vows.describe('note').addBatch({
       equalNote(note('b').transpose("M2"), ['c#', 4]);
     }
   },
-  "toString": function () {
-    assert.equal(note(['g', 3]).toString(), 'g-');
-    assert.equal(note(['db', 5]).toString(), 'db+');
-    assert.equal(note(['f', 4]).toString(), 'f');
+  "toString": {
+    "scientific": function() {
+      assert.equal(note('g').toString(), 'g4')
+      assert.equal(note(['f#', 5]).toString(), 'f#5');
+    },
+    "improv": function () {
+      assert.equal(note(['g', 3]).toImpro(), 'g-');
+      assert.equal(note(['db', 5]).toImpro(), 'db+');
+      assert.equal(note(['f', 4]).toImpro(), 'f');
+    }
   }
 }).export(module);

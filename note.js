@@ -23,8 +23,9 @@
   Note.prototype.pitch = function() { return this.name[0]; }
   Note.prototype.accidentals = function() { return this.name.slice(1); }
 
+  Note.prototype.toString = function() { return this.name + this.oct; }
   var OCTSTR = ['----', '---', '--', '-', '', '+', '++', '+++', '++++'];
-  Note.prototype.toString = function() {
+  Note.prototype.toImpro = function() {
     return this.name + OCTSTR[this.oct];
   }
 
