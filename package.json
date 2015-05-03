@@ -1,26 +1,27 @@
 {
-  "name": "music-note",
-  "version": "0.2.0",
-  "description": "Simple and fast musical note implementation",
+  "name": "scorejs-notes",
+  "version": "0.1.0",
+  "description": "Simple and fast musical interval and note implementation for scorejs",
   "main": "index.js",
   "scripts": {
     "test": "vows test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danigb/musicnote.git"
+    "url": "git+https://github.com/danigb/scorejs-notes.git"
   },
   "keywords": [
     "music",
     "solfege",
-    "note"
+    "note",
+    "scorejs"
   ],
   "author": "= <=>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danigb/musicnote/issues"
+    "url": "https://github.com/danigb/scorejs-notes/issues"
   },
-  "homepage": "https://github.com/danigb/musicnote#readme",
+  "homepage": "https://github.com/danigb/scorejs-notes#readme",
   "devDependencies": {
     "vows": "^0.8.1"
   }

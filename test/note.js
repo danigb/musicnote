@@ -33,6 +33,10 @@ vows.describe('note').addBatch({
       equalNote(note(['c#', 3]), ['c#', 3]);
     }
   },
+  "equal": function() {
+    var n = note('db');
+    assert(n.equal('db'));
+  },
   "midi": {
     "array to midi": function() {
       assert.equal(note('c', 4).midi(), 60);

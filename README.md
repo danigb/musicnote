@@ -1,2 +1,3 @@
-# musicnote
-Simple and fast musical note implementation
+# scorejs-notes
+
+Simple and fast musical interval and note implementation for scorejs
