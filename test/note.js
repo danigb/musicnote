@@ -70,8 +70,14 @@ vows.describe('note').addBatch({
 
       assert.equal(c.distance(note('c', 3)).toString(), 'P-8')
       assert.equal(c.distance(note('b', 3)).toString(), 'm-2');
+      assert.equal(c.distance(note('d', 3)).toString(), 'M-7');
+    },
+    "P-4": function() {
+      var c = note('c', 4);
+      assert.equal(c.distance(note('g', 3)).steps, -3);
+      assert.equal(c.distance(note('g', 3)).distance, -5);
       assert.equal(c.distance(note('g', 3)).toString(), 'P-4');
-      assert.equal(c.distance(note('d', 3)).toString(), 'M-9');
+
     }
 
   },
